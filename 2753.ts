@@ -5,13 +5,19 @@
 import fs = require('fs')   // 파일시스템
 
 // 파일 읽어오기
-// const input = fs.readFileSync('/dev/stdin').toString().trim();
-const input = fs.readFileSync('./input.txt').toString().trim();
+const input = fs.readFileSync('/dev/stdin').toString().trim();
+// const input = fs.readFileSync('./input.txt').toString().trim();
 
 // 입력값
 const year:number = parseInt(input);
 
 // 값 확인
-console.log("year?? : ", year);
+// console.log("year?? : ", year);
 
-// 출력
+// 처리
+// 윤년은 연도가 4의 배수이면서, 100의 배수가 아닐 때 또는 400의 배수일 때이다.
+if((((year%4)==0)&&((year%100)!=0))||(((year%4)==0)&&((year%400)==0))){
+    console.log("1");
+}else{
+    console.log("0");
+}
