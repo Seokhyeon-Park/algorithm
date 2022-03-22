@@ -7,10 +7,14 @@
 import fs = require('fs')   // 파일시스템
 
 // 파일 읽어오기
-// const input = fs.readFileSync('/dev/stdin').toString().trim();
-const input = fs.readFileSync('./input.txt').toString().trim();
+const input = fs.readFileSync('/dev/stdin').toString().trim();
+// const input = fs.readFileSync('./input.txt').toString().trim();
 
 // 출력
-console.log("input ? : ", input);
+// console.log("input ? : ", input);
 
 // 연산
+// 2 * 1 = 2
+for(let ind = 1; ind < 10; ind++){
+    console.log(input[0] + " * " + String(ind) + " = " + String(parseInt(input[0]) * ind));
+}

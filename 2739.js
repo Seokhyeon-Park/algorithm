@@ -8,4 +8,10 @@ var fs = require("fs"); // 파일시스템
 // 파일 읽어오기
 // const input = fs.readFileSync('/dev/stdin').toString().trim();
 var input = fs.readFileSync('./input.txt').toString().trim();
+// 출력
 console.log("input ? : ", input);
+// 연산
+// 2 * 1 = 2
+for (var ind = 1; ind < 10; ind++) {
+    console.log(input[0] + " * " + String(ind) + " = " + String(parseInt(input[0]) * ind));
+}
