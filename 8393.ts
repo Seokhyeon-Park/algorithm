@@ -1,11 +1,11 @@
 import fs = require('fs')   // 파일시스템
 
 // 파일 읽어오기
-// const input = fs.readFileSync('/dev/stdin').toString().trim();
-const input = fs.readFileSync('./input.txt').toString().trim();
+const input = fs.readFileSync('/dev/stdin').toString().split("\n");
+// const input = fs.readFileSync('./input.txt').toString().split("\n");
 
 // 값 나누기
-const val:number = Number(input[0]);
+const val:number = parseInt(input[0]);
 let sum:number = 0;
 
 // 출력
@@ -14,4 +14,4 @@ for(let ind = 1; ind <= val; ind++){
     sum = sum + ind;
 }
 
-console.log()
+console.log(sum);
