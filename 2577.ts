@@ -11,7 +11,7 @@ const A:number = parseInt(input[0]);
 const B:number = parseInt(input[1]);
 const C:number = parseInt(input[2]);
 const numString:string = String(A*B*C);
-let count = new Array(10).fill(0);;
+let count = new Array(10).fill(0);
 for(let val of numString.split("")){
     count[Number(val)] += 1;
 }
