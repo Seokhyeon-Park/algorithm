@@ -1,6 +1,6 @@
 // 3개 주사위의 나온 눈이 주어질 때, 상금을 계산하는 프로그램을 작성 하시오.
 
-import fs = require('fs')   // 파일시스템
+import fs from 'fs';   // 파일시스템
 
 // 파일 읽어오기
 const input = fs.readFileSync('/dev/stdin').toString().split(" ");

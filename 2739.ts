@@ -4,7 +4,7 @@
 // 출력
 // 출력형식과 같게 N*1부터 N*9까지 출력한다.
 
-import fs = require('fs')   // 파일시스템
+import fs from 'fs';   // 파일시스템
 
 // 파일 읽어오기
 const input = fs.readFileSync('/dev/stdin').toString().trim();

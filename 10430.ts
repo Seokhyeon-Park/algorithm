@@ -3,7 +3,7 @@
 // 셋째 줄에 (A×B)%C
 // 넷째 줄에 ((A%C) × (B%C))%C
 
-import fs = require('fs')   // 파일시스템
+import fs from 'fs';   // 파일시스템
 
 // 파일 읽어오기
 const input = fs.readFileSync('/dev/stdin').toString().split(" ");

@@ -1,5 +1,6 @@
 // A + nB < Cn (BREAK-EVEN POINT)
-import fs = require('fs')   // 파일시스템
+import fs from 'fs';   // 파일시스템
+// const fs = require('fs');
 
 // 파일 읽어오기
 // const input = fs.readFileSync('/dev/stdin').toString().trim().split(" ");

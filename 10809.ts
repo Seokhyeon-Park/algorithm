@@ -1,4 +1,4 @@
-import fs = require('fs')   // 파일시스템
+import fs from 'fs';   // 파일시스템
 
 const input = fs.readFileSync('/dev/stdin').toString().trim().split("");
 // const input = fs.readFileSync('./input.txt').toString().trim().split("");

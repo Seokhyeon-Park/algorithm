@@ -5,7 +5,7 @@
 // 출력
 // 각 테스트 케이스마다 "Case #x: "를 출력한 다음, A+B를 출력한다. 테스트 케이스 번호는 1부터 시작한다.
 
-import fs = require('fs')   // 파일시스템
+import fs from 'fs';   // 파일시스템
 
 // 파일 읽어오기
 const input = fs.readFileSync('/dev/stdin').toString().split("\n");

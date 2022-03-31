@@ -3,7 +3,7 @@
 // X보다 작은 수를 입력받은 순서대로 공백으로 구분해 출력한다. X보다 작은 수는 적어도 하나 존재한다.
 // N개의 숫자, X보다 작은 숫자 출력
 
-import fs = require('fs')   // 파일시스템
+import fs from 'fs';   // 파일시스템
 
 // 파일 읽어오기
 const input = fs.readFileSync('/dev/stdin').toString().split("\n");
